@@ -1,0 +1,28 @@
+.quotes__wrapperQuotes{
+  position: relative;
+  width: 830px;
+  height: 175px;
+  padding: 0 20px 10px;
+  margin: 0 0 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.quotes__wrapperQuotes::before{
+  position: absolute;
+  top: 0;
+  left: -20px;
+  display: inline-block;
+  color: #17bed2;
+  font-size: 60px;
+  content: '“';
+}
+.wrapperQuotes__subtitle{
+  font-size: 17px;
+}
+.author__name{
+  color: #81848f;
+  font-size: 14px;
+  font-weight: 900;
+}

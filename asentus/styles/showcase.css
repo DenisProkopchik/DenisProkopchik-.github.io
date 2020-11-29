@@ -1,0 +1,96 @@
+.showcase__wrapper{
+  background-color: #fafafa;
+}
+.showcase__wrapper:hover .gallery__image-wrapper{
+  animation-play-state: running;
+}
+.showcase__title{
+  margin-bottom: 15px;
+}
+.showcase__subtitle{
+  margin-bottom: 55px;
+}
+.showcase__gallery{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.gallery__image-wrapper:first-child{
+  width: 66.5%;
+  background-image: url('../assets/images/800x400/01.jpg');
+}
+.gallery__image-wrapper:nth-child(2){
+  background-image: url('../assets/images/397x400/01.jpg');
+  animation-delay: 0.1s;
+}
+.gallery__image-wrapper:nth-child(3){
+  background-image: url('../assets/images/397x300/01.jpg');
+  animation-delay: 0.2s;
+}
+.gallery__image-wrapper:nth-child(4){
+  background-image: url('../assets/images/397x300/02.jpg');
+  animation-delay: 0.3s;
+}
+.gallery__image-wrapper:nth-child(5){
+  background-image: url('../assets/images/397x300/03.jpg');
+  animation-delay: 0.4s;
+}
+.gallery__image-wrapper{
+  position: relative;
+  width: 33%;
+  height: 285px;
+  background-size: 100% 100%;
+  opacity: 0;
+  transform: translateY(200%);
+  animation: showGallery 0.8s ease-in-out 0s 1 normal forwards;
+  animation-play-state: paused;
+}
+.gallery__image-wrapper_margin_4px{
+  margin: 0 2px 4px 0;
+}
+.gallery__image-wrapper_height_380px{
+  height: 380px;
+}
+.image-wrapper__content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.image-wrapper__content:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.image-wrapper__content:hover .content__subtitle,
+.image-wrapper__content:hover .content__title{
+  transform: translateY(0px);
+}
+.content__title,
+.content__subtitle{
+  position: absolute;
+  bottom: 0;
+  padding: 0 25px;
+  margin-bottom: 25px;
+  color: #fff;
+  transition: all 0.3s;
+  transform: translateY(30px);
+}
+.content__title{
+  bottom: 40px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+@keyframes showGallery{
+  0%{
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

@@ -1,0 +1,29 @@
+.our-clients{
+  position: relative;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.our-clients__text{
+  height: 210px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text__title,
+.text__subtitle{
+  width: 45%;
+  margin: 0;
+}
+.our-clients__image{
+  position: absolute;
+  width: 50%;
+  max-width: 970px;
+  top:0;
+  left: 50%;
+  vertical-align: sub;
+}

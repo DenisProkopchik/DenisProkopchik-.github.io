@@ -1,0 +1,16 @@
+.footer{
+  padding: 40px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo{
+  height: 16px;
+}
+.footerText__links{
+  color: #17bed2;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footerText__links:hover{
+  color: inherit;
+}
